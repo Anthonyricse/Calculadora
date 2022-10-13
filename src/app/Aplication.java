@@ -5,6 +5,9 @@
  */
 package app;
 
+import model.Calculadora;
+import Controlador.controlarCalculadora;
+import vista.vistaCalculadora;
 /**
  *
  * @author anthony.ricse
@@ -15,7 +18,12 @@ public class Aplication {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+      
+        vistaCalculadora frmCalculadora = new vistaCalculadora();
+                
+          controlarCalculadora controlaCal = new controlarCalculadora(frmCalculadora);
+          controlaCal.iniciar();
+          
     }
     
 }
